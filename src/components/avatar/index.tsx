@@ -4,9 +4,9 @@ import styled from "styled-components";
 export type AvatarProps = ImgHTMLAttributes<HTMLImageElement>;
 
 const StyledAvatar = styled.img<AvatarProps>`
-    width: 100px;
-    height: 100px;
-    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
     border: 1px solid #ccc;
     margin: 0 auto;
 `;

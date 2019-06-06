@@ -1,5 +1,6 @@
 import React from "react";
 import { SearchResults } from "../../components/search-results";
+import { SearchSummary } from "../../components/search-summary";
 import { UserCard } from "../../components/user-card";
 
 export const Home: React.FunctionComponent = () => {
@@ -10,7 +11,11 @@ export const Home: React.FunctionComponent = () => {
 
     return (
         <>
-            <h2>Search</h2>
+            <SearchSummary>
+                <h1>Search Results</h1>
+
+                <h3>Your search for "Java" returned 372 results.</h3>
+            </SearchSummary>
 
             <SearchResults>{userCards}</SearchResults>
         </>

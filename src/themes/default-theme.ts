@@ -4,7 +4,7 @@ export const defaultTheme: DefaultTheme = {
     borderRadius: "4px",
 
     colors: {
-        primary: "#ff0000",
+        primary: "#502979",
         secondary: "magenta"
     }
 };

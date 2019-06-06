@@ -1,17 +1,16 @@
-import { ButtonHTMLAttributes } from "react";
+import React from "react";
 import styled, { css } from "styled-components";
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    primary?: boolean;
-}
+export type StyledSearchInputProps = any;
 
-export const SearchInput = styled.input<ButtonProps>`
+export const StyledSearchInput = styled.input<StyledSearchInputProps>`
     background: white;
     border: 2px solid #555;
     border-radius: ${props => props.theme.borderRadius};
-    color: ${props => props.theme.colors.primary};
     font-size: 14px;
     padding: 10px;
+    height: 40px;
+    margin: 10px 0;
 
     ${props =>
         props.primary &&
@@ -22,3 +21,9 @@ export const SearchInput = styled.input<ButtonProps>`
             padding: 12px;
         `}
 `;
+
+export const SearchInput: React.FunctionComponent<
+    StyledSearchInputProps
+> = props => {
+    return <StyledSearchInput {...props} value="Java" />;
+};

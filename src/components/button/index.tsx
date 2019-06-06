@@ -12,6 +12,8 @@ export const Button = styled.button<ButtonProps>`
     color: ${props => props.theme.colors.primary};
     font-size: 14px;
     padding: 10px;
+    height: 40px;
+    margin: 9px 0;
 
     ${props =>
         props.primary &&

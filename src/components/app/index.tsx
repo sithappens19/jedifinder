@@ -8,7 +8,6 @@ import { defaultTheme } from "../../themes";
 const Search = React.lazy(() => import("../../screens/search"));
 const Profile = React.lazy(() => import("../../screens/profile"));
 const Error = React.lazy(() => import("../../screens/error"));
-
 export const App: React.FunctionComponent = () => {
     return (
         <ThemeProvider theme={defaultTheme}>
