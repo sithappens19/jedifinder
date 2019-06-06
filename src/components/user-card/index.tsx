@@ -1,6 +1,7 @@
 import faker from "faker";
 import React from "react";
 import styled from "styled-components";
+import { Avatar } from "../avatar";
 import { Button } from "../button";
 
 export type UserCardProps = any;
@@ -14,6 +15,7 @@ const UserCardHeader = styled.div`
     background: #eee;
     height: 100px;
     border-bottom: 1px solid #ccc;
+    margin: 0 auto;
 `;
 
 const UserCardSection = styled.div`
@@ -40,10 +42,12 @@ export const UserCard = () => {
     return (
         <StyledUserCard>
             <UserCardHeader>
-                <h1>{name}</h1>
-
-                <img src={image} alt={name} />
+                <Avatar src={image} />
             </UserCardHeader>
+
+            <UserCardSection>
+                <h1>{name}</h1>
+            </UserCardSection>
 
             <UserCardSection>
                 <h2>Top Skills</h2>
