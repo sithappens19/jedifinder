@@ -12,6 +12,8 @@ export type UserCardProps = any;
 const StyledUserCard = styled.div<UserCardProps>`
     margin-bottom: 20px;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 `;
 
 const UserCardBody = styled.div`
