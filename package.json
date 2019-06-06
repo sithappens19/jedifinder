@@ -1,0 +1,105 @@
+{
+    "name": "jedi-finder",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "faker": "^4.1.0",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-router-dom": "^5.0.0",
+        "react-scripts": "3.0.0",
+        "styled-components": "^4.2.0"
+    },
+    "scripts": {
+        "analyze": "source-map-explorer 'build/static/js/*.js'",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "storybook": "start-storybook -p 6006",
+        "build-storybook": "build-storybook",
+        "lint": "npm run lint:js && npm run lint:css",
+        "lint:js": "eslint ./src/**/*.tsx",
+        "lint:css": "stylelint ./src/**/*.tsx"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.4.4",
+        "@storybook/addon-a11y": "^5.0.11",
+        "@storybook/addon-actions": "^5.0.11",
+        "@storybook/addon-console": "^1.1.0",
+        "@storybook/addon-knobs": "^5.0.11",
+        "@storybook/addon-links": "^5.0.11",
+        "@storybook/addon-viewport": "^5.0.11",
+        "@storybook/addons": "^5.0.11",
+        "@storybook/react": "^5.0.11",
+        "@types/enzyme": "^3.9.1",
+        "@types/faker": "^4.1.5",
+        "@types/jest": "^24.0.12",
+        "@types/jest-image-snapshot": "^2.8.0",
+        "@types/node": "^11.13.9",
+        "@types/puppeteer": "^1.12.4",
+        "@types/react": "^16.8.15",
+        "@types/react-dom": "^16.8.4",
+        "@types/react-router-dom": "^4.3.3",
+        "@types/react-test-renderer": "^16.8.1",
+        "@types/storybook__addon-a11y": "^5.0.0",
+        "@types/storybook__addon-actions": "^3.4.2",
+        "@types/storybook__addon-knobs": "^5.0.0",
+        "@types/storybook__react": "^4.0.1",
+        "@types/styled-components": "^4.1.14",
+        "babel-loader": "^8.0.5",
+        "enzyme": "^3.9.0",
+        "enzyme-adapter-react-16": "^1.12.1",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^4.2.0",
+        "eslint-plugin-jest": "^22.5.1",
+        "eslint-plugin-jsx-a11y": "^6.2.1",
+        "eslint-plugin-prettier": "^3.1.0",
+        "husky": "^2.2.0",
+        "jest-image-snapshot": "^2.8.1",
+        "jest-styled-components": "^6.3.1",
+        "lint-staged": "^8.1.6",
+        "prettier": "1.17.0",
+        "puppeteer": "^1.15.0",
+        "react-test-renderer": "^16.8.6",
+        "source-map-explorer": "^1.8.0",
+        "stylelint": "^10.0.1",
+        "stylelint-config-prettier": "^5.1.0",
+        "stylelint-config-recommended": "^2.2.0",
+        "stylelint-config-styled-components": "^0.1.1",
+        "stylelint-prettier": "^1.1.0",
+        "stylelint-processor-styled-components": "^1.6.0",
+        "typescript": "^3.4.5"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,css,json,md}": [
+            "prettier --write",
+            "git add"
+        ],
+        "*.js": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.tsx": [
+            "stylelint --fix",
+            "git add"
+        ]
+    }
+}

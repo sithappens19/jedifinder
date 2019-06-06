@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button default button renders correctly 1`] = `
+.c0 {
+  background: white;
+  border: 2px solid #555;
+  border-radius: 4px;
+  color: #ff0000;
+  font-size: 14px;
+  padding: 10px;
+}
+
+<button
+  className="c0"
+>
+  Example Button
+</button>
+`;
+
+exports[`button primary button renders correctly 1`] = `
+.c0 {
+  background: white;
+  border: 2px solid #555;
+  border-radius: 4px;
+  color: #ff0000;
+  font-size: 14px;
+  padding: 10px;
+  background: green;
+  border: none;
+  color: #fff;
+  padding: 12px;
+}
+
+<button
+  className="c0"
+>
+  Example Button
+</button>
+`;

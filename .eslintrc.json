@@ -1,0 +1,13 @@
+{
+    "plugins": ["jest", "jsx-a11y", "prettier"],
+    "extends": [
+        "react-app",
+        "plugin:jest/recommended",
+        "plugin:jsx-a11y/strict",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "import/no-default-export": "error",
+        "jest/lowercase-name": "error"
+    }
+}
