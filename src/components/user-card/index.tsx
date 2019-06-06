@@ -44,6 +44,11 @@ const UserCardSection = styled.div`
         padding-bottom: 0;
     }
 
+    h2,
+    h3 {
+        color: #502979;
+    }
+
     h2 {
         margin: -15px 0 3px 0;
     }
@@ -53,7 +58,7 @@ const UserCardSection = styled.div`
     }
 
     h4 {
-        color: #555;
+        color: #333;
         margin: 0 0 5px 0;
     }
 `;
@@ -73,6 +78,7 @@ const UserCardSkill = styled.li`
 
     h3 {
         margin: 3px 0;
+        color: #333;
     }
 
     div {
@@ -100,7 +106,7 @@ const RatingChecked = styled.div`
     height: 12px;
     border-radius: 12px;
     border: 1px solid #ccc;
-    background: #555;
+    background: #502979;
 `;
 
 export const UserCard = () => {
@@ -186,7 +192,8 @@ export const UserCard = () => {
                         height: "32px",
                         width: "32px",
                         top: "10px",
-                        right: "10px"
+                        right: "10px",
+                        color: "#888"
                     }}
                 />
                 <Avatar src={image} />

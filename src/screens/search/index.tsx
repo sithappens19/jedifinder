@@ -12,9 +12,11 @@ export const Home: React.FunctionComponent = () => {
     return (
         <>
             <SearchSummary>
-                <h1>Search Results</h1>
+                <h1 style={{ color: "#502979" }}>Search Results</h1>
 
-                <h3>Your search for "Java" returned 372 results.</h3>
+                <h3 style={{ color: "#333" }}>
+                    Your search for "Java" returned 372 results.
+                </h3>
             </SearchSummary>
 
             <SearchResults>{userCards}</SearchResults>
